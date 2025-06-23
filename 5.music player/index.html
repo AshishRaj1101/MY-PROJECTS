@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="playlist.svg" alt="playlist" id="playlist-img">
+        <h2>FEEL THE MUSIC</h2>
+        <img src="music.svg" alt="music" id="music-img">
+    </header>
+    <main>
+        <div class="left">
+            <div class="song-image">
+                <img src="musicanim.webp" alt="anim" id="musicanim">
+             </div>
+            <div class="volume-div">
+                <div class="volume-img">
+                    <img src="volume.svg" alt="Volume" id="vol-svg">
+                </div>
+                <input type="range" id="volume-range" onchange="volume()"> 
+                
+            </div>
+           
+
+        </div>
+     
+        <div class="right">
+            <div class="details">
+                <h3 id="song-name">Blue Eyes</h3>
+                <h5 id="song-singer">Yo YO Honey Singh</h5>
+            </div>
+            <input type="range" id="song-duration"onchange="duration()">
+            <div class="controls">
+                <div class="prev-img"><img src="previous.svg" alt="previous" id="prev-img" 
+                    onclick="previousSong()"></div>
+                <div class="play-pause"><img src="pause.svg" alt="play" id="play-pause" 
+                    onclick="playPause()">
+                </div>
+                <div class="next-img"><img src="next.svg" alt="next" id="next-img" 
+                    onclick="nextSong()"></div>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="playlist-song">
+                    <img src="image1.jpg" alt="img">
+                    <div class="song-details">
+                        <h2>Blue Eyes</h2>
+                        <h5>Yo Yo Honey Singh</h5>
+                    </div>
+                </div>
+                <div class="playlist-song">
+                    <img src="image2.jpg" alt="img">
+                    <div class="song-details">
+                        <h2>Criminal</h2>
+                        <h5>Sharukh Khan</h5>
+                    </div>
+                </div>
+                <div class="playlist-song">
+                    <img src="image3.jpg" alt="img">
+                    <div class="song-details">
+                        <h2>Tum hi ho</h2>
+                        <h5>Arjit Singh</h5>
+                    </div>
+                </div>
+                <div class="playlist-song">
+                    <img src="image4.jpg" alt="img">
+                    <div class="song-details">
+                        <h2>Dil shambhal ja jara</h2>
+                        <h5>Arjit singh</h5>
+                    </div>
+                </div>
+                <div class="playlist-song">
+                    <img src="image5.jpg" alt="img">
+                    <div class="song-details">
+                        <h2>Mera Safar</h2>
+                        <h5>Nova</h5>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
